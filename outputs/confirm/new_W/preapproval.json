@@ -1,0 +1,12 @@
+{
+ "projected_bytes_this_set": 4615901286,
+ "used_bytes": 11618050782,
+ "projected_bytes_later_sets": 3877203296,
+ "projected_total_bytes": 20111155364,
+ "limit_bytes": 24000000000,
+ "free_bytes_now": 57957715968,
+ "projected_free_bytes_after": 49464611386,
+ "min_free_bytes": 5000000000,
+ "families_reduced_by_cap_rule": [],
+ "decision": "continue to phase 2"
+}

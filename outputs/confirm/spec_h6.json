@@ -1,0 +1,11 @@
+{
+ "parts": [
+  "outputs/confirm/new_W",
+  "outputs/confirm/replication_W"
+ ],
+ "model": "Z25",
+ "n_perm": 10000,
+ "n_boot": 5000,
+ "out": "outputs/confirm",
+ "name": "h6.json"
+}

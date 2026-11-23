@@ -1,0 +1,299 @@
+{
+ "rows": 31064,
+ "research_with_T": 31064,
+ "families": [
+  "Acrididae",
+  "Apiaceae",
+  "Apocynaceae",
+  "Ardeidae",
+  "Asparagaceae",
+  "Caprifoliaceae",
+  "Caryophyllaceae",
+  "Chrysomelidae",
+  "Coccinellidae",
+  "Cyperaceae",
+  "Erebidae",
+  "Ericaceae",
+  "Fagaceae",
+  "Formicidae",
+  "Geometridae",
+  "Hesperiidae",
+  "Laridae",
+  "Libellulidae",
+  "Lycaenidae",
+  "Malvaceae",
+  "Noctuidae",
+  "Onagraceae",
+  "Pentatomidae",
+  "Pieridae",
+  "Plantaginaceae",
+  "Polygonaceae",
+  "Ranunculaceae",
+  "Syrphidae",
+  "Tettigoniidae",
+  "Vespidae"
+ ],
+ "replicates": 2000,
+ "Z25_families_lower_bound_above_0": 9,
+ "Z25_tipping_point_to_0": 0.01759788843797341,
+ "Z25_tipping_point_to_1": 0.00759788843797341,
+ "Z25_share_slow_errors_proposed": 0.10472897179977797,
+ "Z2_families_lower_bound_above_0": 8,
+ "Z2_tipping_point_to_0": 0.02105848698308212,
+ "Z2_tipping_point_to_1": 0.01105848698308212,
+ "Z2_share_slow_errors_proposed": 0.05752521468722478,
+ "Z1_families_lower_bound_above_0": 11,
+ "Z1_tipping_point_to_0": 0.043311332241609,
+ "Z1_tipping_point_to_1": 0.033311332241609,
+ "Z1_share_slow_errors_proposed": 0.021088337273326773,
+ "BT-CLIP-O_families_lower_bound_above_0": 4,
+ "BT-CLIP-O_tipping_point_to_0": 0.013472985916181226,
+ "BT-CLIP-O_tipping_point_to_1": 0.003472985916181226,
+ "BT-CLIP-O_share_slow_errors_proposed": 0.013866741025554,
+ "b3_covariates": [
+  "week",
+  "width",
+  "height",
+  "n_photos",
+  "vision",
+  "ident_avail",
+  "queue_load",
+  "activity S1",
+  "activity S2",
+  "activity S3"
+ ],
+ "b3_missing_values": {
+  "week": 0,
+  "width": 0,
+  "height": 0,
+  "n_photos": 0,
+  "vision": 0,
+  "ident_avail": 0,
+  "queue_load": 41
+ },
+ "b3_rows_without_activity_stratum": 0,
+ "rho_band": "largely not explained",
+ "exact_duplicates_dropped": 1,
+ "exact_duplicates_dropped_by_predict_step": 1,
+ "identifier_availability": {
+  "sources": [],
+  "families": {
+   "Libellulidae": {
+    "population": 96769.0,
+    "sampled_with_history": 1500,
+    "scale": 64.51266666666666
+   },
+   "Laridae": {
+    "population": 43547.0,
+    "sampled_with_history": 1500,
+    "scale": 29.031333333333333
+   },
+   "Malvaceae": {
+    "population": 19838.0,
+    "sampled_with_history": 1500,
+    "scale": 13.225333333333333
+   },
+   "Pentatomidae": {
+    "population": 33660.0,
+    "sampled_with_history": 1499,
+    "scale": 22.454969979986657
+   },
+   "Apiaceae": {
+    "population": 43032.0,
+    "sampled_with_history": 1500,
+    "scale": 28.688
+   },
+   "Plantaginaceae": {
+    "population": 46271.0,
+    "sampled_with_history": 1500,
+    "scale": 30.847333333333335
+   },
+   "Tettigoniidae": {
+    "population": 19929.0,
+    "sampled_with_history": 1500,
+    "scale": 13.286
+   },
+   "Ericaceae": {
+    "population": 70077.0,
+    "sampled_with_history": 1500,
+    "scale": 46.718
+   },
+   "Ardeidae": {
+    "population": 67342.0,
+    "sampled_with_history": 1100,
+    "scale": 61.22
+   },
+   "Fagaceae": {
+    "population": 24850.0,
+    "sampled_with_history": 1500,
+    "scale": 16.566666666666666
+   },
+   "Cyperaceae": {
+    "population": 9055.0,
+    "sampled_with_history": 1500,
+    "scale": 6.036666666666667
+   },
+   "Chrysomelidae": {
+    "population": 13663.0,
+    "sampled_with_history": 1500,
+    "scale": 9.108666666666666
+   },
+   "Ranunculaceae": {
+    "population": 29248.0,
+    "sampled_with_history": 1500,
+    "scale": 19.498666666666665
+   },
+   "Vespidae": {
+    "population": 31800.0,
+    "sampled_with_history": 1500,
+    "scale": 21.2
+   },
+   "Asparagaceae": {
+    "population": 22256.0,
+    "sampled_with_history": 1500,
+    "scale": 14.837333333333333
+   },
+   "Polygonaceae": {
+    "population": 32251.0,
+    "sampled_with_history": 1500,
+    "scale": 21.500666666666667
+   },
+   "Hesperiidae": {
+    "population": 51508.0,
+    "sampled_with_history": 1500,
+    "scale": 34.33866666666667
+   },
+   "Coccinellidae": {
+    "population": 42234.0,
+    "sampled_with_history": 1500,
+    "scale": 28.156
+   },
+   "Geometridae": {
+    "population": 41397.0,
+    "sampled_with_history": 1500,
+    "scale": 27.598
+   },
+   "Caryophyllaceae": {
+    "population": 30756.0,
+    "sampled_with_history": 1499,
+    "scale": 20.517678452301535
+   },
+   "Erebidae": {
+    "population": 79856.0,
+    "sampled_with_history": 1500,
+    "scale": 53.23733333333333
+   },
+   "Syrphidae": {
+    "population": 41152.0,
+    "sampled_with_history": 1500,
+    "scale": 27.434666666666665
+   },
+   "Pieridae": {
+    "population": 42864.0,
+    "sampled_with_history": 1499,
+    "scale": 28.595063375583724
+   },
+   "Lycaenidae": {
+    "population": 44923.0,
+    "sampled_with_history": 1500,
+    "scale": 29.948666666666668
+   },
+   "Onagraceae": {
+    "population": 29692.0,
+    "sampled_with_history": 1500,
+    "scale": 19.794666666666668
+   },
+   "Formicidae": {
+    "population": 13036.0,
+    "sampled_with_history": 1499,
+    "scale": 8.696464309539692
+   },
+   "Caprifoliaceae": {
+    "population": 29890.0,
+    "sampled_with_history": 1500,
+    "scale": 19.926666666666666
+   },
+   "Acrididae": {
+    "population": 29324.0,
+    "sampled_with_history": 1500,
+    "scale": 19.549333333333333
+   },
+   "Apocynaceae": {
+    "population": 30276.0,
+    "sampled_with_history": 1499,
+    "scale": 20.1974649766511
+   },
+   "Noctuidae": {
+    "population": 53477.0,
+    "sampled_with_history": 1499,
+    "scale": 35.67511674449633
+   }
+  }
+ },
+ "ident_experience_rows_defined": 28175,
+ "analysis_minutes": 2.15,
+ "nonfinite": [],
+ "not_estimable": [],
+ "pooled_with_families_left_out": [
+  {
+   "model": "Z25",
+   "quantity": "Delta within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "Z25",
+   "quantity": "ER within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "Z2",
+   "quantity": "Delta within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "Z2",
+   "quantity": "ER within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "Z1",
+   "quantity": "Delta within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "Z1",
+   "quantity": "ER within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "Delta without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Acrididae;Apiaceae;Ardeidae;Chrysomelidae;Geometridae;Lycaenidae;Noctuidae;Pentatomidae;Plantaginaceae;Tettigoniidae;Vespidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "ER without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Acrididae;Apiaceae;Ardeidae;Chrysomelidae;Geometridae;Lycaenidae;Noctuidae;Pentatomidae;Plantaginaceae;Tettigoniidae;Vespidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "Delta within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "ER within activity S0",
+   "unit": "pooled",
+   "families_left_out": "Geometridae"
+  }
+ ]
+}

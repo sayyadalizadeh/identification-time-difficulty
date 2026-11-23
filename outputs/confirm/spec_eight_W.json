@@ -1,0 +1,70 @@
+{
+ "name": "eight_W",
+ "out": "outputs/confirm/eight_W",
+ "families": [
+  "Asteraceae",
+  "Fabaceae",
+  "Nymphalidae",
+  "Anatidae",
+  "Lamiaceae",
+  "Rosaceae",
+  "Columbidae",
+  "Sciuridae"
+ ],
+ "window": "W",
+ "frame": "outputs/confirm/frames/frames_eight_locked.parquet",
+ "n1": 12000,
+ "f_A0": 0.5,
+ "f_B1": 0.5,
+ "research_only": false,
+ "exclude": [],
+ "dates": [
+  "2024-10-01",
+  "2025-01-01",
+  "2025-10-01"
+ ],
+ "s_star": "2025-01-01",
+ "planned_fraction": {
+  "Asteraceae": 0.6771881032962073,
+  "Fabaceae": 0.6883716286524992,
+  "Nymphalidae": 0.5833101103677251,
+  "Anatidae": 0.5708180675369621,
+  "Lamiaceae": 0.6825632266860147,
+  "Rosaceae": 0.6698567723372819,
+  "Columbidae": 0.5591711048707272,
+  "Sciuridae": 0.6257447948611758
+ },
+ "replicates": 2000,
+ "q_window": true,
+ "external_without": [
+  "Sciuridae"
+ ],
+ "snapshot": "../Datasets/iNaturalist_2026-10-27",
+ "manifest": "inputs/earlier_gates/code/docs/manifests/inat_snapshot_2026-10-27_sha256.csv",
+ "hf_cache": "<absolute local folder; removed from the package>",
+ "eligible": "inputs/earlier_gates/outputs/G-IG8.0/e1_species_primary.csv",
+ "models": [
+  "Z25",
+  "Z2",
+  "Z1",
+  "BT-CLIP-O"
+ ],
+ "replicates_hypotheses": 5000,
+ "hypothesis_c2": true,
+ "ident_sources": [
+  {
+   "api_raw": "outputs/D4/api_raw_d4",
+   "table": "outputs/D4/d4_sample.csv"
+  }
+ ],
+ "ident_population_extra": {
+  "Asteraceae": 292518,
+  "Fabaceae": 97509,
+  "Nymphalidae": 119192,
+  "Anatidae": 39297,
+  "Lamiaceae": 54037,
+  "Rosaceae": 92398,
+  "Columbidae": 20654,
+  "Sciuridae": 19236
+ }
+}

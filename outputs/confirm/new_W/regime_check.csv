@@ -1,0 +1,25 @@
+model,family,flagged_species,flagged
+Z25,Colubridae,,False
+Z25,Poaceae,,False
+Z25,Polyporaceae,,False
+Z25,Araneidae,,False
+Z25,Pinaceae,,False
+Z25,Ranidae,,False
+Z2,Colubridae,,False
+Z2,Poaceae,,False
+Z2,Polyporaceae,,False
+Z2,Araneidae,,False
+Z2,Pinaceae,,False
+Z2,Ranidae,,False
+Z1,Colubridae,,False
+Z1,Poaceae,,False
+Z1,Polyporaceae,,False
+Z1,Araneidae,,False
+Z1,Pinaceae,,False
+Z1,Ranidae,,False
+BT-CLIP-O,Colubridae,,False
+BT-CLIP-O,Poaceae,,False
+BT-CLIP-O,Polyporaceae,,False
+BT-CLIP-O,Araneidae,119342,True
+BT-CLIP-O,Pinaceae,,False
+BT-CLIP-O,Ranidae,25545 25669,True

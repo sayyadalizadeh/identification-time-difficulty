@@ -1,0 +1,47 @@
+{
+ "rows": 96696,
+ "research_with_T": 77236,
+ "families": [
+  "Anatidae",
+  "Araneidae",
+  "Asteraceae",
+  "Colubridae",
+  "Columbidae",
+  "Fabaceae",
+  "Lamiaceae",
+  "Nymphalidae",
+  "Pinaceae",
+  "Poaceae",
+  "Polyporaceae",
+  "Ranidae",
+  "Rosaceae",
+  "Sciuridae"
+ ],
+ "replicates": 2000,
+ "Z25_families_lower_bound_above_0": 10,
+ "Z2_families_lower_bound_above_0": 11,
+ "Z1_families_lower_bound_above_0": 10,
+ "BT-CLIP-O_families_lower_bound_above_0": 8,
+ "relation_across_families": {
+  "rho": 0.810989010989011,
+  "p": 0.000999900009999,
+  "families_used": 14,
+  "families_left_out": []
+ },
+ "fast_share": {
+  "Anatidae": 0.8799931862703347,
+  "Asteraceae": 0.4763029676657316,
+  "Columbidae": 0.8900236326806212,
+  "Fabaceae": 0.5092472611615031,
+  "Lamiaceae": 0.5308468214872156,
+  "Nymphalidae": 0.8480502437195351,
+  "Rosaceae": 0.481504221028396,
+  "Sciuridae": 0.7731452548879564,
+  "Araneidae": 0.7068780225685115,
+  "Colubridae": 0.8069672131147541,
+  "Pinaceae": 0.45417078799868116,
+  "Poaceae": 0.47798046803021926,
+  "Polyporaceae": 0.4128185717890487,
+  "Ranidae": 0.684680610514415
+ }
+}

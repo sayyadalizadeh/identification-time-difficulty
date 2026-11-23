@@ -1,0 +1,486 @@
+{
+ "families": [
+  "Poaceae",
+  "Polyporaceae",
+  "Araneidae",
+  "Colubridae",
+  "Ranidae",
+  "Pinaceae",
+  "Noctuidae",
+  "Erebidae",
+  "Geometridae",
+  "Libellulidae",
+  "Ericaceae",
+  "Hesperiidae",
+  "Acrididae",
+  "Syrphidae",
+  "Apiaceae",
+  "Lycaenidae",
+  "Polygonaceae",
+  "Plantaginaceae",
+  "Ranunculaceae",
+  "Cyperaceae",
+  "Ardeidae",
+  "Onagraceae",
+  "Vespidae",
+  "Formicidae",
+  "Pieridae",
+  "Caryophyllaceae",
+  "Laridae",
+  "Pentatomidae",
+  "Fagaceae",
+  "Malvaceae",
+  "Tettigoniidae",
+  "Apocynaceae",
+  "Coccinellidae",
+  "Caprifoliaceae",
+  "Asparagaceae",
+  "Chrysomelidae"
+ ],
+ "windows": [
+  "W"
+ ],
+ "half": "both",
+ "manifest_observations.csv.gz": true,
+ "manifest_photos.csv.gz": true,
+ "manifest_taxa.csv.gz": true,
+ "pass1_minutes": 1.3,
+ "rows_in_windows": 3224631,
+ "rows_in_windows_half": 3224631,
+ "pass2_minutes": 6.3,
+ "minutes": 8.1,
+ "frame_rows": [
+  {
+   "window": "W",
+   "family": "Acrididae",
+   "grade": "needs_id",
+   "n": 23620
+  },
+  {
+   "window": "W",
+   "family": "Acrididae",
+   "grade": "research",
+   "n": 29324
+  },
+  {
+   "window": "W",
+   "family": "Apiaceae",
+   "grade": "needs_id",
+   "n": 15447
+  },
+  {
+   "window": "W",
+   "family": "Apiaceae",
+   "grade": "research",
+   "n": 43032
+  },
+  {
+   "window": "W",
+   "family": "Apocynaceae",
+   "grade": "needs_id",
+   "n": 6454
+  },
+  {
+   "window": "W",
+   "family": "Apocynaceae",
+   "grade": "research",
+   "n": 30276
+  },
+  {
+   "window": "W",
+   "family": "Araneidae",
+   "grade": "needs_id",
+   "n": 18294
+  },
+  {
+   "window": "W",
+   "family": "Araneidae",
+   "grade": "research",
+   "n": 51696
+  },
+  {
+   "window": "W",
+   "family": "Ardeidae",
+   "grade": "needs_id",
+   "n": 941
+  },
+  {
+   "window": "W",
+   "family": "Ardeidae",
+   "grade": "research",
+   "n": 67342
+  },
+  {
+   "window": "W",
+   "family": "Asparagaceae",
+   "grade": "needs_id",
+   "n": 9506
+  },
+  {
+   "window": "W",
+   "family": "Asparagaceae",
+   "grade": "research",
+   "n": 22256
+  },
+  {
+   "window": "W",
+   "family": "Caprifoliaceae",
+   "grade": "needs_id",
+   "n": 16072
+  },
+  {
+   "window": "W",
+   "family": "Caprifoliaceae",
+   "grade": "research",
+   "n": 29890
+  },
+  {
+   "window": "W",
+   "family": "Caryophyllaceae",
+   "grade": "needs_id",
+   "n": 11040
+  },
+  {
+   "window": "W",
+   "family": "Caryophyllaceae",
+   "grade": "research",
+   "n": 30756
+  },
+  {
+   "window": "W",
+   "family": "Chrysomelidae",
+   "grade": "needs_id",
+   "n": 3912
+  },
+  {
+   "window": "W",
+   "family": "Chrysomelidae",
+   "grade": "research",
+   "n": 13663
+  },
+  {
+   "window": "W",
+   "family": "Coccinellidae",
+   "grade": "needs_id",
+   "n": 2363
+  },
+  {
+   "window": "W",
+   "family": "Coccinellidae",
+   "grade": "research",
+   "n": 42234
+  },
+  {
+   "window": "W",
+   "family": "Colubridae",
+   "grade": "needs_id",
+   "n": 715
+  },
+  {
+   "window": "W",
+   "family": "Colubridae",
+   "grade": "research",
+   "n": 33559
+  },
+  {
+   "window": "W",
+   "family": "Cyperaceae",
+   "grade": "needs_id",
+   "n": 28016
+  },
+  {
+   "window": "W",
+   "family": "Cyperaceae",
+   "grade": "research",
+   "n": 9055
+  },
+  {
+   "window": "W",
+   "family": "Erebidae",
+   "grade": "needs_id",
+   "n": 18764
+  },
+  {
+   "window": "W",
+   "family": "Erebidae",
+   "grade": "research",
+   "n": 79856
+  },
+  {
+   "window": "W",
+   "family": "Ericaceae",
+   "grade": "needs_id",
+   "n": 14928
+  },
+  {
+   "window": "W",
+   "family": "Ericaceae",
+   "grade": "research",
+   "n": 70077
+  },
+  {
+   "window": "W",
+   "family": "Fagaceae",
+   "grade": "needs_id",
+   "n": 22264
+  },
+  {
+   "window": "W",
+   "family": "Fagaceae",
+   "grade": "research",
+   "n": 24850
+  },
+  {
+   "window": "W",
+   "family": "Formicidae",
+   "grade": "needs_id",
+   "n": 15152
+  },
+  {
+   "window": "W",
+   "family": "Formicidae",
+   "grade": "research",
+   "n": 13036
+  },
+  {
+   "window": "W",
+   "family": "Geometridae",
+   "grade": "needs_id",
+   "n": 15808
+  },
+  {
+   "window": "W",
+   "family": "Geometridae",
+   "grade": "research",
+   "n": 41397
+  },
+  {
+   "window": "W",
+   "family": "Hesperiidae",
+   "grade": "needs_id",
+   "n": 12456
+  },
+  {
+   "window": "W",
+   "family": "Hesperiidae",
+   "grade": "research",
+   "n": 51508
+  },
+  {
+   "window": "W",
+   "family": "Laridae",
+   "grade": "needs_id",
+   "n": 8262
+  },
+  {
+   "window": "W",
+   "family": "Laridae",
+   "grade": "research",
+   "n": 43547
+  },
+  {
+   "window": "W",
+   "family": "Libellulidae",
+   "grade": "needs_id",
+   "n": 13533
+  },
+  {
+   "window": "W",
+   "family": "Libellulidae",
+   "grade": "research",
+   "n": 96769
+  },
+  {
+   "window": "W",
+   "family": "Lycaenidae",
+   "grade": "needs_id",
+   "n": 7867
+  },
+  {
+   "window": "W",
+   "family": "Lycaenidae",
+   "grade": "research",
+   "n": 44923
+  },
+  {
+   "window": "W",
+   "family": "Malvaceae",
+   "grade": "needs_id",
+   "n": 15973
+  },
+  {
+   "window": "W",
+   "family": "Malvaceae",
+   "grade": "research",
+   "n": 19838
+  },
+  {
+   "window": "W",
+   "family": "Noctuidae",
+   "grade": "needs_id",
+   "n": 26662
+  },
+  {
+   "window": "W",
+   "family": "Noctuidae",
+   "grade": "research",
+   "n": 53477
+  },
+  {
+   "window": "W",
+   "family": "Onagraceae",
+   "grade": "needs_id",
+   "n": 28270
+  },
+  {
+   "window": "W",
+   "family": "Onagraceae",
+   "grade": "research",
+   "n": 29692
+  },
+  {
+   "window": "W",
+   "family": "Pentatomidae",
+   "grade": "needs_id",
+   "n": 5442
+  },
+  {
+   "window": "W",
+   "family": "Pentatomidae",
+   "grade": "research",
+   "n": 33660
+  },
+  {
+   "window": "W",
+   "family": "Pieridae",
+   "grade": "needs_id",
+   "n": 11633
+  },
+  {
+   "window": "W",
+   "family": "Pieridae",
+   "grade": "research",
+   "n": 42864
+  },
+  {
+   "window": "W",
+   "family": "Pinaceae",
+   "grade": "needs_id",
+   "n": 17905
+  },
+  {
+   "window": "W",
+   "family": "Pinaceae",
+   "grade": "research",
+   "n": 28133
+  },
+  {
+   "window": "W",
+   "family": "Plantaginaceae",
+   "grade": "needs_id",
+   "n": 10231
+  },
+  {
+   "window": "W",
+   "family": "Plantaginaceae",
+   "grade": "research",
+   "n": 46271
+  },
+  {
+   "window": "W",
+   "family": "Poaceae",
+   "grade": "needs_id",
+   "n": 50411
+  },
+  {
+   "window": "W",
+   "family": "Poaceae",
+   "grade": "research",
+   "n": 56754
+  },
+  {
+   "window": "W",
+   "family": "Polygonaceae",
+   "grade": "needs_id",
+   "n": 31790
+  },
+  {
+   "window": "W",
+   "family": "Polygonaceae",
+   "grade": "research",
+   "n": 32251
+  },
+  {
+   "window": "W",
+   "family": "Polyporaceae",
+   "grade": "needs_id",
+   "n": 21027
+  },
+  {
+   "window": "W",
+   "family": "Polyporaceae",
+   "grade": "research",
+   "n": 13894
+  },
+  {
+   "window": "W",
+   "family": "Ranidae",
+   "grade": "needs_id",
+   "n": 4783
+  },
+  {
+   "window": "W",
+   "family": "Ranidae",
+   "grade": "research",
+   "n": 37816
+  },
+  {
+   "window": "W",
+   "family": "Ranunculaceae",
+   "grade": "needs_id",
+   "n": 22460
+  },
+  {
+   "window": "W",
+   "family": "Ranunculaceae",
+   "grade": "research",
+   "n": 29248
+  },
+  {
+   "window": "W",
+   "family": "Syrphidae",
+   "grade": "needs_id",
+   "n": 5503
+  },
+  {
+   "window": "W",
+   "family": "Syrphidae",
+   "grade": "research",
+   "n": 41152
+  },
+  {
+   "window": "W",
+   "family": "Tettigoniidae",
+   "grade": "needs_id",
+   "n": 11792
+  },
+  {
+   "window": "W",
+   "family": "Tettigoniidae",
+   "grade": "research",
+   "n": 19929
+  },
+  {
+   "window": "W",
+   "family": "Vespidae",
+   "grade": "needs_id",
+   "n": 15076
+  },
+  {
+   "window": "W",
+   "family": "Vespidae",
+   "grade": "research",
+   "n": 31800
+  }
+ ]
+}

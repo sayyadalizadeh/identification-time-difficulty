@@ -1,0 +1,154 @@
+{
+ "rows": 60417,
+ "research_with_T": 48833,
+ "families": [
+  "Anatidae",
+  "Asteraceae",
+  "Columbidae",
+  "Fabaceae",
+  "Lamiaceae",
+  "Nymphalidae",
+  "Rosaceae",
+  "Sciuridae"
+ ],
+ "replicates": 2000,
+ "Z25_families_lower_bound_above_0": 7,
+ "Z25_tipping_point_to_0": 0.039853909057780995,
+ "Z25_tipping_point_to_1": 0.029853909057780993,
+ "Z25_share_slow_errors_proposed": 0.055806559829964096,
+ "c2_families_left_out": {
+  "Z25": {},
+  "Z2": {},
+  "Z1": {},
+  "BT-CLIP-O": {}
+ },
+ "Z2_families_lower_bound_above_0": 8,
+ "Z2_tipping_point_to_0": 0.05161706666602866,
+ "Z2_tipping_point_to_1": 0.04161706666602866,
+ "Z2_share_slow_errors_proposed": 0.04087832636991089,
+ "Z1_families_lower_bound_above_0": 7,
+ "Z1_tipping_point_to_0": 0.08615805698322582,
+ "Z1_tipping_point_to_1": 0.07615805698322582,
+ "Z1_share_slow_errors_proposed": 0.017333431195731015,
+ "BT-CLIP-O_families_lower_bound_above_0": 5,
+ "BT-CLIP-O_tipping_point_to_0": 0.03305236438853718,
+ "BT-CLIP-O_tipping_point_to_1": 0.023052364388537184,
+ "BT-CLIP-O_share_slow_errors_proposed": 0.005907587848050107,
+ "b3_covariates": [
+  "week",
+  "width",
+  "height",
+  "n_photos",
+  "vision",
+  "ident_avail",
+  "queue_load",
+  "activity S1",
+  "activity S2",
+  "activity S3"
+ ],
+ "b3_missing_values": {
+  "week": 0,
+  "width": 0,
+  "height": 0,
+  "n_photos": 0,
+  "vision": 0,
+  "ident_avail": 0,
+  "queue_load": 128
+ },
+ "b3_rows_without_activity_stratum": 0,
+ "rho_band": "largely not explained",
+ "q_rows_with_Q": 45847,
+ "exact_duplicates_dropped": 28,
+ "exact_duplicates_dropped_by_predict_step": 28,
+ "identifier_availability": {
+  "sources": [
+   "outputs/D4/api_raw_d4"
+  ],
+  "families": {
+   "Sciuridae": {
+    "population": 38106.0,
+    "sampled_with_history": 15000,
+    "scale": 2.5404
+   },
+   "Anatidae": {
+    "population": 80840.0,
+    "sampled_with_history": 15000,
+    "scale": 5.389333333333333
+   },
+   "Nymphalidae": {
+    "population": 233233.0,
+    "sampled_with_history": 14999,
+    "scale": 15.54990332688846
+   },
+   "Fabaceae": {
+    "population": 194739.0,
+    "sampled_with_history": 14999,
+    "scale": 12.983465564370958
+   },
+   "Columbidae": {
+    "population": 41999.0,
+    "sampled_with_history": 14754,
+    "scale": 2.8466178663413313
+   },
+   "Rosaceae": {
+    "population": 185774.0,
+    "sampled_with_history": 14999,
+    "scale": 12.385759050603374
+   },
+   "Asteraceae": {
+    "population": 583994.0,
+    "sampled_with_history": 14999,
+    "scale": 38.93552903526902
+   },
+   "Lamiaceae": {
+    "population": 108257.0,
+    "sampled_with_history": 15000,
+    "scale": 7.217133333333333
+   }
+  }
+ },
+ "ident_experience_rows_defined": 58537,
+ "hypothesis_replicates": 5000,
+ "hypothesis_minutes": 0.57,
+ "analysis_minutes": 8.37,
+ "nonfinite": [],
+ "not_estimable": [],
+ "pooled_with_families_left_out": [
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "Delta without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "ER without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "O without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "R without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "G_all without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "G_sup without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Sciuridae"
+  }
+ ]
+}

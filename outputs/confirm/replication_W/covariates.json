@@ -1,0 +1,59 @@
+{
+ "families": [
+  "Noctuidae",
+  "Erebidae",
+  "Geometridae",
+  "Libellulidae",
+  "Ericaceae",
+  "Hesperiidae",
+  "Acrididae",
+  "Syrphidae",
+  "Apiaceae",
+  "Lycaenidae",
+  "Polygonaceae",
+  "Plantaginaceae",
+  "Ranunculaceae",
+  "Cyperaceae",
+  "Ardeidae",
+  "Onagraceae",
+  "Vespidae",
+  "Formicidae",
+  "Pieridae",
+  "Caryophyllaceae",
+  "Laridae",
+  "Pentatomidae",
+  "Fagaceae",
+  "Malvaceae",
+  "Tettigoniidae",
+  "Apocynaceae",
+  "Coccinellidae",
+  "Caprifoliaceae",
+  "Asparagaceae",
+  "Chrysomelidae"
+ ],
+ "manifest_observations.csv.gz": {
+  "PASS": true,
+  "seconds": 6.8
+ },
+ "manifest_taxa.csv.gz": {
+  "PASS": true,
+  "seconds": 0.0
+ },
+ "taxa_in_the_families": 237428,
+ "scan_minutes": 1.31,
+ "snapshot_rows_read": 288721938,
+ "snapshot_rows_in_families": 52104237,
+ "snapshot_rows_counted_for_queue (coordinates and valid observed_on)": 51645656,
+ "snapshot_rows_of_sampled_observers_with_valid_observed_on": 110745461,
+ "rows": 45000,
+ "rows_without_valid_observed_on": 0,
+ "focal_rows_with_queue_count_0": 0,
+ "focal_rows_without_coordinates": 59,
+ "activity_stratum_counts": {
+  "S3": 28163,
+  "S2": 10722,
+  "S1": 4322,
+  "S0": 1793
+ },
+ "minutes": 1.55
+}

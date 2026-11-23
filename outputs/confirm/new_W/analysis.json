@@ -1,0 +1,139 @@
+{
+ "rows": 36279,
+ "research_with_T": 28403,
+ "families": [
+  "Araneidae",
+  "Colubridae",
+  "Pinaceae",
+  "Poaceae",
+  "Polyporaceae",
+  "Ranidae"
+ ],
+ "replicates": 2000,
+ "Z25_families_lower_bound_above_0": 3,
+ "Z25_tipping_point_to_0": 0.03173070424653759,
+ "Z25_tipping_point_to_1": 0.021730704246537585,
+ "Z25_share_slow_errors_proposed": 0.06871723628943856,
+ "c2_families_left_out": {
+  "Z25": {},
+  "Z2": {},
+  "Z1": {},
+  "BT-CLIP-O": {}
+ },
+ "Z2_families_lower_bound_above_0": 3,
+ "Z2_tipping_point_to_0": 0.03939355544672969,
+ "Z2_tipping_point_to_1": 0.02939355544672969,
+ "Z2_share_slow_errors_proposed": 0.0482738937477208,
+ "Z1_families_lower_bound_above_0": 3,
+ "Z1_tipping_point_to_0": 0.030527877328997585,
+ "Z1_tipping_point_to_1": 0.020527877328997586,
+ "Z1_share_slow_errors_proposed": 0.015167061896600519,
+ "BT-CLIP-O_families_lower_bound_above_0": 2,
+ "BT-CLIP-O_tipping_point_to_0": 0.017600501058211513,
+ "BT-CLIP-O_tipping_point_to_1": 0.007600501058211513,
+ "BT-CLIP-O_share_slow_errors_proposed": 0.0067816362653755876,
+ "b3_covariates": [
+  "week",
+  "width",
+  "height",
+  "n_photos",
+  "vision",
+  "ident_avail",
+  "queue_load",
+  "activity S1",
+  "activity S2",
+  "activity S3"
+ ],
+ "b3_missing_values": {
+  "week": 0,
+  "width": 0,
+  "height": 0,
+  "n_photos": 0,
+  "vision": 0,
+  "ident_avail": 0,
+  "queue_load": 100
+ },
+ "b3_rows_without_activity_stratum": 0,
+ "rho_band": "largely not explained",
+ "exact_duplicates_dropped": 11,
+ "exact_duplicates_dropped_by_predict_step": 11,
+ "identifier_availability": {
+  "sources": [],
+  "families": {
+   "Pinaceae": {
+    "population": 46038.0,
+    "sampled_with_history": 9999,
+    "scale": 4.604260426042604
+   },
+   "Colubridae": {
+    "population": 34274.0,
+    "sampled_with_history": 10000,
+    "scale": 3.4274
+   },
+   "Poaceae": {
+    "population": 107165.0,
+    "sampled_with_history": 10000,
+    "scale": 10.7165
+   },
+   "Ranidae": {
+    "population": 42599.0,
+    "sampled_with_history": 9999,
+    "scale": 4.260326032603261
+   },
+   "Polyporaceae": {
+    "population": 34921.0,
+    "sampled_with_history": 9998,
+    "scale": 3.492798559711942
+   },
+   "Araneidae": {
+    "population": 69990.0,
+    "sampled_with_history": 9997,
+    "scale": 7.00110033009903
+   }
+  }
+ },
+ "ident_experience_rows_defined": 34863,
+ "hypothesis_replicates": 5000,
+ "hypothesis_minutes": 0.02,
+ "analysis_minutes": 4.85,
+ "nonfinite": [],
+ "not_estimable": [],
+ "pooled_with_families_left_out": [
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "Delta without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "ER without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "O without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "R without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "G_all without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  },
+  {
+   "model": "BT-CLIP-O",
+   "quantity": "G_sup without regime-flagged pairs",
+   "unit": "pooled",
+   "families_left_out": "Araneidae;Ranidae"
+  }
+ ]
+}

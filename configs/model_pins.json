@@ -1,0 +1,58 @@
+[
+  {
+    "model": "BioCLIP",
+    "repository": "imageomics/bioclip",
+    "revision": "ce901ab3c6a913f9e9ef94ce6d27761069f4f01c",
+    "file": "open_clip_pytorch_model.bin",
+    "bytes": 598599013,
+    "sha256": "e380384f0c30d425d8c6c40f24471f9dd497fbdfa734a89c461a94aee95f0ef4",
+    "loaded_file": true
+  },
+  {
+    "model": "BioCLIP 2",
+    "repository": "imageomics/bioclip-2",
+    "revision": "15537b64d4d21233f920582ffe4645481d06c26c",
+    "file": "open_clip_model.safetensors",
+    "bytes": 1710517724,
+    "sha256": "b7b2bf6fbc95799e42630e394cf95803892ab447c1a8ab629dbc82fbeaf7dfef",
+    "loaded_file": true
+  },
+  {
+    "model": "BioCLIP 2",
+    "repository": "imageomics/bioclip-2",
+    "revision": "15537b64d4d21233f920582ffe4645481d06c26c",
+    "file": "open_clip_pytorch_model.bin",
+    "bytes": 1710639510,
+    "sha256": "035208dd616321f6c220384efaa1f10e9fcd8e1f2998ddefc88687718d186a85",
+    "loaded_file": false
+  },
+  {
+    "model": "BioCLIP 2.5 Huge",
+    "repository": "imageomics/bioclip-2.5-vith14",
+    "revision": "6e3d04e3d6522012c88181085c5ae666e14c45cd",
+    "file": "open_clip_model.safetensors",
+    "bytes": 3944517804,
+    "sha256": "ac2e37c2f89ef8e6b889176a9a3f418970ad9db15a218bd29e3321e95c46ae97",
+    "loaded_file": true
+  },
+  {
+    "model": "DINOv2-base",
+    "repository": "facebook/dinov2-base",
+    "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+    "file": "model.safetensors",
+    "bytes": 346345912,
+    "sha256": "d73036b56966966d07975d696bde331762f37297e2f095de8cea0040c3aa0841",
+    "loaded_file": true
+  },
+  {
+    "model": "BT-CLIP-O",
+    "repository": "BGLab/BioTrove-CLIP",
+    "revision": "f4776d5e84dc7305e191c38443f905dc89ed606b",
+    "file": "biotroveclip-vit-b-16-from-openai-epoch-40.pt",
+    "bytes": 1051423822,
+    "sha256": "b38aaaba419b1d3a6e507ef61181e3b786c9678eaf1c87b52b34cdb48c6b9b87",
+    "loaded_file": true,
+    "architecture": "ViT-B-16",
+    "local_path": "models/BioTrove-CLIP/biotroveclip-vit-b-16-from-openai-epoch-40.pt"
+  }
+]

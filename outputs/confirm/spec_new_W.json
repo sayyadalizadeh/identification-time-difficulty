@@ -1,0 +1,50 @@
+{
+ "name": "new_W",
+ "out": "outputs/confirm/new_W",
+ "families": [
+  "Poaceae",
+  "Polyporaceae",
+  "Araneidae",
+  "Colubridae",
+  "Ranidae",
+  "Pinaceae"
+ ],
+ "window": "W",
+ "frame": "outputs/confirm/frames/frames_new_replication_both.parquet",
+ "n1": 10000,
+ "f_A0": 0.5,
+ "f_B1": 0.3,
+ "research_only": false,
+ "exclude": [],
+ "dates": [
+  "2024-10-01",
+  "2025-01-01",
+  "2025-10-01"
+ ],
+ "s_star": "2025-01-01",
+ "planned_fraction": {
+  "Poaceae": 0.597592831490406,
+  "Polyporaceae": 0.597592831490406,
+  "Araneidae": 0.597592831490406,
+  "Colubridae": 0.597592831490406,
+  "Ranidae": 0.597592831490406,
+  "Pinaceae": 0.597592831490406
+ },
+ "replicates": 2000,
+ "q_window": false,
+ "external_without": [
+  "Ranidae"
+ ],
+ "snapshot": "../Datasets/iNaturalist_2026-10-27",
+ "manifest": "inputs/earlier_gates/code/docs/manifests/inat_snapshot_2026-10-27_sha256.csv",
+ "hf_cache": "<absolute local folder; removed from the package>",
+ "eligible": "inputs/earlier_gates/outputs/G-IG8.0/e1_species_primary.csv",
+ "models": [
+  "Z25",
+  "Z2",
+  "Z1",
+  "BT-CLIP-O"
+ ],
+ "replicates_hypotheses": 5000,
+ "hypothesis_c2": false
+}

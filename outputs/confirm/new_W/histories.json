@@ -1,0 +1,9 @@
+{
+ "stopped": null,
+ "failed": [],
+ "requests": 300,
+ "hidden": 0,
+ "returned": 59993,
+ "requested": 60000,
+ "research_rg_today_share": 0.9987245818794369
+}

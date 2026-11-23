@@ -1,0 +1,35 @@
+{
+ "families": [
+  "Poaceae",
+  "Polyporaceae",
+  "Araneidae",
+  "Colubridae",
+  "Ranidae",
+  "Pinaceae"
+ ],
+ "manifest_observations.csv.gz": {
+  "PASS": true,
+  "seconds": 6.8
+ },
+ "manifest_taxa.csv.gz": {
+  "PASS": true,
+  "seconds": 0.0
+ },
+ "taxa_in_the_families": 24729,
+ "scan_minutes": 1.34,
+ "snapshot_rows_read": 288721938,
+ "snapshot_rows_in_families": 9506988,
+ "snapshot_rows_counted_for_queue (coordinates and valid observed_on)": 9385127,
+ "snapshot_rows_of_sampled_observers_with_valid_observed_on": 109455056,
+ "rows": 60000,
+ "rows_without_valid_observed_on": 0,
+ "focal_rows_with_queue_count_0": 0,
+ "focal_rows_without_coordinates": 301,
+ "activity_stratum_counts": {
+  "S3": 31665,
+  "S2": 16229,
+  "S1": 8321,
+  "S0": 3785
+ },
+ "minutes": 1.57
+}

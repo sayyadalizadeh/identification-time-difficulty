@@ -1,0 +1,37 @@
+{
+ "families": [
+  "Asteraceae",
+  "Fabaceae",
+  "Nymphalidae",
+  "Anatidae",
+  "Lamiaceae",
+  "Rosaceae",
+  "Columbidae",
+  "Sciuridae"
+ ],
+ "manifest_observations.csv.gz": {
+  "PASS": true,
+  "seconds": 7.0
+ },
+ "manifest_taxa.csv.gz": {
+  "PASS": true,
+  "seconds": 0.0
+ },
+ "taxa_in_the_families": 105770,
+ "scan_minutes": 1.6,
+ "snapshot_rows_read": 288721938,
+ "snapshot_rows_in_families": 41026130,
+ "snapshot_rows_counted_for_queue (coordinates and valid observed_on)": 40611329,
+ "snapshot_rows_of_sampled_observers_with_valid_observed_on": 74152877,
+ "rows": 96000,
+ "rows_without_valid_observed_on": 0,
+ "focal_rows_with_queue_count_0": 0,
+ "focal_rows_without_coordinates": 346,
+ "activity_stratum_counts": {
+  "S3": 56822,
+  "S2": 23062,
+  "S1": 10441,
+  "S0": 5675
+ },
+ "minutes": 1.86
+}

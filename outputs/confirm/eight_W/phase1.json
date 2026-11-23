@@ -1,0 +1,37 @@
+{
+ "frame_and_sample_sizes": {
+  "Fabaceae": [
+   97230,
+   12000
+  ],
+  "Asteraceae": [
+   291476,
+   12000
+  ],
+  "Nymphalidae": [
+   114041,
+   12000
+  ],
+  "Columbidae": [
+   21345,
+   12000
+  ],
+  "Anatidae": [
+   41543,
+   12000
+  ],
+  "Lamiaceae": [
+   54220,
+   12000
+  ],
+  "Rosaceae": [
+   93376,
+   12000
+  ],
+  "Sciuridae": [
+   18870,
+   12000
+  ]
+ },
+ "excluded_uuids": 0
+}

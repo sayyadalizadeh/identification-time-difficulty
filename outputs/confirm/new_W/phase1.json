@@ -1,0 +1,29 @@
+{
+ "frame_and_sample_sizes": {
+  "Colubridae": [
+   34274,
+   10000
+  ],
+  "Poaceae": [
+   107165,
+   10000
+  ],
+  "Polyporaceae": [
+   34921,
+   10000
+  ],
+  "Araneidae": [
+   69990,
+   10000
+  ],
+  "Pinaceae": [
+   46038,
+   10000
+  ],
+  "Ranidae": [
+   42599,
+   10000
+  ]
+ },
+ "excluded_uuids": 0
+}

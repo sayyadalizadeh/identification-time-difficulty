@@ -1,0 +1,16 @@
+{
+ "parts": {
+  "eight_W": "outputs/confirm/eight_W",
+  "new_W": "outputs/confirm/new_W",
+  "eight_W2": "outputs/confirm/eight_W2"
+ },
+ "h6": "outputs/confirm/h6.json",
+ "model": "Z25",
+ "secondary_models": [
+  "Z2",
+  "Z1",
+  "BT-CLIP-O"
+ ],
+ "replicates": 5000,
+ "out": "outputs/confirm"
+}

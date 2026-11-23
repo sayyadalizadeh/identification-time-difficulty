@@ -1,0 +1,120 @@
+# Registered values of the confirmatory plan, draft 3 (docs/plan_blocks/confirmatory_plan_draft3.md), sections 3 to 10.
+# Read by src/confirm/config.py; checked against the plan text by tests/test_config.py.
+
+plan_file: docs/plan_blocks/confirmatory_plan_draft3.md
+snapshot_date: "2026-10-27"
+identification_cutoff_utc: "2026-10-27 23:59:59"   # identifications created later are ignored (section 4.3)
+seed: 20261121
+
+windows:
+  W:  {start: "2024-07-01", end: "2024-09-30", max_M1: 367752438}
+  W2: {start: "2025-01-01", end: "2025-03-31", max_M1: 367752438}
+w2_entry_min_locked: 5000            # a family enters W2 with at least 5,000 locked-half observations (section 3)
+
+frame:
+  licences: ["CC0", "CC-BY", "CC-BY-NC"]
+  min_shorter_side_px: 224           # filter of the earlier gates (not stated as a number in the plan)
+  research: "taxon at species rank or below, species in the label space"
+  needs_id: "taxon at species or genus rank, genus holds a label-space species"
+
+sets:
+  eight:
+    families: [Asteraceae, Fabaceae, Nymphalidae, Anatidae, Lamiaceae, Rosaceae, Columbidae, Sciuridae]
+    half: locked
+    windows:
+      W:  {n1: 12000, f_A0: 0.5, f_B1: 0.5, S_star: "2025-01-01", S_secondary: ["2024-10-01", "2025-10-01"]}
+      W2: {n1: 8000,  f_A0: 0.3, f_B1: 0.3, S_star: "2025-07-01", S_secondary: ["2025-04-01", "2026-04-01"]}
+  new:
+    families: [Poaceae, Polyporaceae, Araneidae, Colubridae, Ranidae, Pinaceae]
+    half: both
+    windows:
+      W: {n1: 10000, f_A0: 0.5, f_B1: 0.3, S_star: "2025-01-01", S_secondary: ["2024-10-01", "2025-10-01"]}
+  replication:
+    families: [Noctuidae, Erebidae, Geometridae, Libellulidae, Ericaceae, Hesperiidae, Acrididae, Syrphidae, Apiaceae,
+               Lycaenidae, Polygonaceae, Plantaginaceae, Ranunculaceae, Cyperaceae, Ardeidae, Onagraceae, Vespidae,
+               Formicidae, Pieridae, Caryophyllaceae, Laridae, Pentatomidae, Fagaceae, Malvaceae, Tettigoniidae,
+               Apocynaceae, Coccinellidae, Caprifoliaceae, Asparagaceae, Chrysomelidae]
+    half: both
+    frame: research_only
+    windows:
+      W: {n1: 1500, f_A0: 0.5}
+  dry_run:
+    families: [Orchidaceae, Salticidae, Phrynosomatidae, Bufonidae]
+    next_family_classes: [Agaricomycetes, Pinopsida]   # next family of the class with at least 10 eligible species
+    next_family_min_eligible: 10
+    half: development
+
+rule_F: {min_eligible_species: 20, min_window_W: 10000, families_chosen: 6}
+rule_F2: {min_eligible_species: 20, min_window_W: 10000, families_listed: 30}
+
+strata:                               # T in days (section 4.3)
+  A0: [0, 1]
+  A1: [1, 30]
+  A2: [30, 365]
+  A3: [365, null]
+  B2_min_support: 2
+  B1_support: 1
+  B1_includes_support_0: true         # D6 addendum 1, item 3
+cap_rule:
+  factor: 1.5                         # phase-2 photographs of a family at most 1.5 times its planned number
+  order: [reduce f_A0 and f_B1 by the same factor, then subsample A1]
+
+measurements:
+  slow_min_days: 1
+  rg_dates_W: ["2024-10-01", "2025-01-01", "2025-10-01"]
+  common_horizon_days: 540
+  retries: 3
+  failure_share_max: 0.02
+  photo_size: medium
+  api_per_request: 200
+  api_min_seconds_between_requests: 1
+
+regime_check: {max_prediction_share: 0.10, min_label_share: 0.02}
+
+inference:
+  template: "a photo of + kingdom, phylum, class, order and family names + species name"
+  models:
+    Z25: {name: "BioCLIP 2.5 Huge", repository: imageomics/bioclip-2.5-vith14, revision: 6e3d04e3, role: primary}
+    Z2:  {name: "BioCLIP 2", repository: imageomics/bioclip-2, revision: 15537b64, role: secondary}
+    Z1:  {name: "BioCLIP", repository: imageomics/bioclip, revision: ce901ab3c6a913f9e9ef94ce6d27761069f4f01c, role: secondary}
+    external: {name: "BT-CLIP-O", repository: BGLab/BioTrove-CLIP, file: biotroveclip-vit-b-16-from-openai-epoch-40.pt,
+               architecture: ViT-B-16, revision: f4776d5e84dc7305e191c38443f905dc89ed606b,
+               sha256: b38aaaba419b1d3a6e507ef61181e3b786c9678eaf1c87b52b34cdb48c6b9b87, bytes: 1051423822,
+               text_template: P1, chosen_in: "D11 Part B (rule B1)", fallback: {name: "BT-CLIP-M", file: biotroveclip-vit-l-14-from-metaclip-epoch-12.pt,
+               architecture: ViT-L-14}, without_families: [Sciuridae, Ranidae], pinned_in: configs/model_pins.json}
+
+inference_settings:
+  bootstrap_replicates_hypotheses: 5000
+  bootstrap_replicates_other: 2000
+  permutations_H6: 10000
+  interval: 0.95
+  one_sided_bound_percentiles: [5, 95]
+  alpha_one_sided: 0.05
+  holm_thresholds: [0.0083, 0.01, 0.0125, 0.0167, 0.025, 0.05]
+  hypotheses: [H1, H2, H3, H4, H5, H6]
+
+decision_rules:
+  min_effect_points: 1.0
+  min_effect_ratio: 1.15
+  c3_bands: [0.75, 0.5]
+
+c3:
+  identifier_availability_days: 90
+  Q: {cell_degrees: 10, min_rows: 20, exclude_same_observer: true, fixed_in_bootstrap: true, direction: positive}
+  H6: {families: 36, n_research_grade: 1500, test: spearman, permutations: 10000, direction: positive}
+  heterogeneity:
+    animals: [Nymphalidae, Anatidae, Columbidae, Sciuridae, Araneidae, Colubridae, Ranidae]
+    plants: [Asteraceae, Fabaceae, Lamiaceae, Rosaceae, Poaceae, Pinaceae]
+    alone: [Polyporaceae]
+sensitivity:
+  strong_consensus_min_agreeing: 3
+  duplicates_phash_bits: 64
+  duplicates_h: 6                     # set by the researcher after D11 Part D (D13 addendum 1, item 3)
+
+run_settings:                         # settings of the run, not registered values (N18a)
+  download_limit_bytes: {confirmatory: 24000000000, dry_run: 8000000000}
+  download_counter: {confirmatory: outputs/confirm/download_bytes.json, dry_run: outputs/overnight/download_bytes.json}
+  api_stop_minutes: 30                # a history step stops after 30 minutes of API failure (src/confirm/acquisition.py)
+  api_wait_minutes: 60                # the driver then waits 60 minutes and resumes
+  api_max_waits: 3                    # at most three waits; the run stops after the third
+  min_free_bytes: 5000000000

@@ -1,0 +1,125 @@
+{
+ "frame_and_sample_sizes": {
+  "Ardeidae": [
+   67342,
+   1500
+  ],
+  "Geometridae": [
+   41397,
+   1500
+  ],
+  "Libellulidae": [
+   96769,
+   1500
+  ],
+  "Noctuidae": [
+   53477,
+   1500
+  ],
+  "Erebidae": [
+   79856,
+   1500
+  ],
+  "Formicidae": [
+   13036,
+   1500
+  ],
+  "Chrysomelidae": [
+   13663,
+   1500
+  ],
+  "Asparagaceae": [
+   22256,
+   1500
+  ],
+  "Tettigoniidae": [
+   19929,
+   1500
+  ],
+  "Apiaceae": [
+   43032,
+   1500
+  ],
+  "Ericaceae": [
+   70077,
+   1500
+  ],
+  "Pentatomidae": [
+   33660,
+   1500
+  ],
+  "Ranunculaceae": [
+   29248,
+   1500
+  ],
+  "Coccinellidae": [
+   42234,
+   1500
+  ],
+  "Apocynaceae": [
+   30276,
+   1500
+  ],
+  "Laridae": [
+   43547,
+   1500
+  ],
+  "Plantaginaceae": [
+   46271,
+   1500
+  ],
+  "Caryophyllaceae": [
+   30756,
+   1500
+  ],
+  "Onagraceae": [
+   29692,
+   1500
+  ],
+  "Polygonaceae": [
+   32251,
+   1500
+  ],
+  "Caprifoliaceae": [
+   29890,
+   1500
+  ],
+  "Fagaceae": [
+   24850,
+   1500
+  ],
+  "Acrididae": [
+   29324,
+   1500
+  ],
+  "Malvaceae": [
+   19838,
+   1500
+  ],
+  "Pieridae": [
+   42864,
+   1500
+  ],
+  "Cyperaceae": [
+   9055,
+   1500
+  ],
+  "Hesperiidae": [
+   51508,
+   1500
+  ],
+  "Syrphidae": [
+   41152,
+   1500
+  ],
+  "Vespidae": [
+   31800,
+   1500
+  ],
+  "Lycaenidae": [
+   44923,
+   1500
+  ]
+ },
+ "excluded_uuids": 0
+}

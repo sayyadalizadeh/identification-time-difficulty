@@ -1,0 +1,17 @@
+{
+ "api_seconds": 2838.7536008358,
+ "api_requests": 320,
+ "api_observations": 64000,
+ "download_seconds": 2905.9340238571167,
+ "downloaded": 27570,
+ "bytes": 3696944868,
+ "photographs_ok": 27568,
+ "download_stopped": null,
+ "inference_seconds_per_photo": {
+  "Z25": 0.006572674317755674,
+  "Z2": 0.0035977507236041235,
+  "Z1": 0.0014715144541536176,
+  "BT-CLIP-O": 0.0014444330509360696
+ },
+ "photographs_predicted": 27568
+}

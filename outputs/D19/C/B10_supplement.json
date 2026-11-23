@@ -1,0 +1,9 @@
+{
+ "rho_within_species": -0.1954141191092163,
+ "lo95": -0.21808244015670258,
+ "hi95": -0.1726530634721549,
+ "rows": 48606,
+ "species": 934,
+ "replicates": 2000,
+ "definition": "ranks within species (species with at least 3 research rows with T), weighted Pearson correlation of the within-species centred ranks (phase-2 weights)"
+}

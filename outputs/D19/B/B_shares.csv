@@ -1,0 +1,76 @@
+set,share,within,weighted_share,rows,rows_within
+eight_W,T_wait < 1 day,slow,0.09338714022561964,2525,21949
+eight_W,T_wait >= 1 day,slow,0.9066128597743803,19424,21949
+eight_W,own identification at creation: none,fast,0.018844000291558718,455,26884
+eight_W,own identification at creation: none,slow,0.06013482795267831,1334,21949
+eight_W,own identification at creation: above species rank,fast,0.056431673244078634,1673,26884
+eight_W,own identification at creation: above species rank,slow,0.1471110333622907,3648,21949
+eight_W,own identification at creation: species rank,fast,0.9247243264643626,24756,26884
+eight_W,own identification at creation: species rank,slow,0.7927541386850313,16967,21949
+eight_W,observer's earliest identification later than 1 h after creation,research with T,0.014816137359102567,729,48833
+eight_W,vision-assisted identification up to research grade,fast,0.7924449057440507,20492,26884
+eight_W,vision-assisted identification up to research grade,slow,0.806241404701245,17235,21949
+eight_W,any vision-assisted identification,fast,0.7936829893698116,20520,26884
+eight_W,any vision-assisted identification,slow,0.8064079313431347,17242,21949
+eight_W,one photograph only,fast,0.6576994971768654,18300,26884
+eight_W,one photograph only,slow,0.6244699445383747,14002,21949
+eight_W,any withdrawn identification,fast,0.05460406434059903,1670,26884
+eight_W,any withdrawn identification,slow,0.0908132483571893,2252,21949
+eight_W,any non-ancestor identification above species rank,fast,0.0012178138728414604,45,26884
+eight_W,any non-ancestor identification above species rank,slow,0.002343110229644376,78,21949
+eight_W,prior exposure,fast,0.5831985139486733,16209,26884
+eight_W,prior exposure,slow,0.45233503488578325,10019,21949
+eight_W,"weighted median T_wait (days), slow looked at early",slow,0.13108796296296296,2525,21949
+eight_W,"weighted median T_res (days), slow looked at early",slow,13.563449074074075,2525,21949
+eight_W,"weighted median T_wait (days), slow waited",slow,28.2075,19424,21949
+eight_W,"weighted median T_res (days), slow waited",slow,0.0,19424,21949
+eight_W2,T_wait < 1 day,slow,0.14842847675185897,1527,9953
+eight_W2,T_wait >= 1 day,slow,0.8515715232481409,8426,9953
+eight_W2,own identification at creation: none,fast,0.020806342057458387,260,11630
+eight_W2,own identification at creation: none,slow,0.07467045072887792,744,9953
+eight_W2,own identification at creation: above species rank,fast,0.05966977704582581,783,11630
+eight_W2,own identification at creation: above species rank,slow,0.17165183039434806,1769,9953
+eight_W2,own identification at creation: species rank,fast,0.919523880896716,10587,11630
+eight_W2,own identification at creation: species rank,slow,0.753677718876774,7440,9953
+eight_W2,observer's earliest identification later than 1 h after creation,research with T,0.010824942274108398,361,21583
+eight_W2,vision-assisted identification up to research grade,fast,0.7607331036676983,8803,11630
+eight_W2,vision-assisted identification up to research grade,slow,0.7656867589279216,7590,9953
+eight_W2,any vision-assisted identification,fast,0.7622483204676703,8821,11630
+eight_W2,any vision-assisted identification,slow,0.766379638767318,7595,9953
+eight_W2,one photograph only,fast,0.6830613890999845,7840,11630
+eight_W2,one photograph only,slow,0.6293075852967682,6275,9953
+eight_W2,any withdrawn identification,fast,0.057603416769988196,751,11630
+eight_W2,any withdrawn identification,slow,0.12055321547079283,1202,9953
+eight_W2,any non-ancestor identification above species rank,fast,0.0029084470093326945,26,11630
+eight_W2,any non-ancestor identification above species rank,slow,0.005965441427198866,55,9953
+eight_W2,prior exposure,fast,0.5881987100871439,6596,11630
+eight_W2,prior exposure,slow,0.4158476724708638,4044,9953
+eight_W2,"weighted median T_wait (days), slow looked at early",slow,0.15372685185185186,1527,9953
+eight_W2,"weighted median T_res (days), slow looked at early",slow,6.187604166666667,1527,9953
+eight_W2,"weighted median T_wait (days), slow waited",slow,10.38712962962963,8426,9953
+eight_W2,"weighted median T_res (days), slow waited",slow,0.0,8426,9953
+new_W,T_wait < 1 day,slow,0.15052647174491174,2667,15318
+new_W,T_wait >= 1 day,slow,0.8494735282550882,12651,15318
+new_W,own identification at creation: none,fast,0.021646139592973884,300,13085
+new_W,own identification at creation: none,slow,0.06154891058147216,987,15318
+new_W,own identification at creation: above species rank,fast,0.09486844524962239,1301,13085
+new_W,own identification at creation: above species rank,slow,0.18348877410173345,2958,15318
+new_W,own identification at creation: species rank,fast,0.883485415157404,11484,13085
+new_W,own identification at creation: species rank,slow,0.7549623153167944,11373,15318
+new_W,observer's earliest identification later than 1 h after creation,research with T,0.017126547128752546,585,28403
+new_W,vision-assisted identification up to research grade,fast,0.748385888837592,9556,13085
+new_W,vision-assisted identification up to research grade,slow,0.7546564100170104,11378,15318
+new_W,any vision-assisted identification,fast,0.7500664919914983,9587,13085
+new_W,any vision-assisted identification,slow,0.7552158572407478,11391,15318
+new_W,one photograph only,fast,0.5940851124115816,7764,13085
+new_W,one photograph only,slow,0.5879024029011699,9051,15318
+new_W,any withdrawn identification,fast,0.08382056833530138,1236,13085
+new_W,any withdrawn identification,slow,0.16060431562533434,2827,15318
+new_W,any non-ancestor identification above species rank,fast,0.00271294737237839,43,13085
+new_W,any non-ancestor identification above species rank,slow,0.005358280915079415,83,15318
+new_W,prior exposure,fast,0.5172822831392051,6760,13085
+new_W,prior exposure,slow,0.46103155612125873,7121,15318
+new_W,"weighted median T_wait (days), slow looked at early",slow,0.09376157407407408,2667,15318
+new_W,"weighted median T_res (days), slow looked at early",slow,13.563900462962962,2667,15318
+new_W,"weighted median T_wait (days), slow waited",slow,12.861550925925926,12651,15318
+new_W,"weighted median T_res (days), slow waited",slow,0.0,12651,15318

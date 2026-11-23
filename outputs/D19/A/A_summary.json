@@ -1,0 +1,212 @@
+{
+ "A3_code": [
+  "src/confirm/analysis.py:141:             # tipping point: excess label error among slow observations that brings the bound to 0 and to 1.0",
+  "src/confirm/analysis.py:142:             lo = E.one_sided(r[\"Delta\"])[0]",
+  "src/confirm/analysis.py:143:             info[f\"{m}_tipping_point_to_0\"] = float(lo / 100)",
+  "src/confirm/analysis.py:144:             info[f\"{m}_tipping_point_to_1\"] = float((lo - 1.0) / 100)",
+  "src/confirm/estimators.py:47: def one_sided(x):",
+  "src/confirm/estimators.py:48:     \"\"\"One-sided 95% bounds (5th and 95th percentiles of the replicates) and the one-sided p-value of H > 0",
+  "src/confirm/estimators.py:49:     (share of replicates at or below 0, section 8).\"\"\"",
+  "src/confirm/estimators.py:50:     r = np.asarray(x, float)[1:]",
+  "src/confirm/estimators.py:51:     r = r[np.isfinite(r)]",
+  "src/confirm/estimators.py:52:     if not len(r):",
+  "src/confirm/estimators.py:53:         return np.nan, np.nan, np.nan",
+  "src/confirm/estimators.py:54:     return float(np.percentile(r, 5)), float(np.percentile(r, 95)), float((r <= 0).mean())"
+ ],
+ "A4": {
+  "rho_stored": 0.810989010989011,
+  "p_stored": 0.000999900009999,
+  "families_used": 14,
+  "families_left_out": [],
+  "n_perm": 10000,
+  "sidedness": "one-sided, alternative rho > 0: p = (1 + number of permuted rho >= observed) / (1 + n_perm)",
+  "rho_recomputed": 0.810989010989011,
+  "p_two_sided_D19": 0.000999900009999,
+  "p_one_sided_rho_below_D19": 0.9994000599940006,
+  "permutations_D19": 10000,
+  "seed_D19": 20261124,
+  "families": [
+   "Anatidae",
+   "Araneidae",
+   "Asteraceae",
+   "Colubridae",
+   "Columbidae",
+   "Fabaceae",
+   "Lamiaceae",
+   "Nymphalidae",
+   "Pinaceae",
+   "Poaceae",
+   "Polyporaceae",
+   "Ranidae",
+   "Rosaceae",
+   "Sciuridae"
+  ],
+  "code": [
+   "src/confirm/estimators.py:274: def spearman_permutation(x, y, n_perm, rng):",
+   "src/confirm/estimators.py:275:     \"\"\"Spearman rho and the one-sided permutation p-value of rho > 0: (1 + number of permuted rho >= observed) /",
+   "src/confirm/estimators.py:276:     (1 + n_perm).\"\"\"",
+   "src/confirm/estimators.py:277:     x, y = np.asarray(x, float), np.asarray(y, float)",
+   "src/confirm/estimators.py:278:     ok = np.isfinite(x) & np.isfinite(y)",
+   "src/confirm/estimators.py:279:     x, y = x[ok], y[ok]",
+   "src/confirm/estimators.py:280:     rho = spearman(x, y)",
+   "src/confirm/estimators.py:281:     perm = np.array([spearman(x, rng.permutation(y)) for _ in range(n_perm)])",
+   "src/confirm/estimators.py:282:     return rho, float((1 + (perm >= rho - 1e-12).sum()) / (1 + n_perm)), int(ok.sum())",
+   "scripts/confirm_run.py:503:     est, info = AN.analyse(dj, s[\"models\"], [], None, int(s[\"replicates\"]), L.rng_new(), fe=False, sensitivities=False)",
+   "scripts/confirm_run.py:504:     dl = est[(est[\"model\"] == s[\"models\"][0]) & (est[\"quantity\"] == \"Delta\") & est[\"unit\"].isin(fs)]",
+   "scripts/confirm_run.py:505:     rel = E.h6(dict(zip(dl[\"unit\"], dl[\"value\"])), fs, int(s[\"n_perm\"]), L.rng_new())"
+  ]
+ },
+ "A6": {
+  "code": [
+   "src/confirm/estimators.py:27: def boot_matrix(observer, w, R, rng):",
+   "src/confirm/estimators.py:28:     \"\"\"(R + 1) x n weights: row 0 = w; rows 1..R = w x multiplicity of the row's observer in a draw of observers",
+   "src/confirm/estimators.py:29:     with replacement (observer-cluster bootstrap with fixed weights, section 8).\"\"\"",
+   "src/confirm/estimators.py:30:     obs, oi = np.unique(np.asarray(observer), return_inverse=True)",
+   "src/confirm/estimators.py:31:     W = np.empty((R + 1, len(oi)), np.float32)",
+   "src/confirm/estimators.py:32:     W[0] = w",
+   "src/confirm/estimators.py:33:     for b in range(R):",
+   "src/confirm/estimators.py:34:         W[b + 1] = w * np.bincount(rng.integers(0, len(obs), len(obs)), minlength=len(obs))[oi]",
+   "src/confirm/estimators.py:35:     return W",
+   "src/confirm/analysis.py:75:     W = E.boot_matrix(rows[\"observer_id\"].to_numpy(), rows[\"w\"].to_numpy(float), R, rng)",
+   "scripts/confirm_run.py:437:         Wt = E.boot_matrix(d[\"observer_id\"].to_numpy(), d[\"w\"].to_numpy(float), Rp, rng)",
+   "scripts/confirm_run.py:500:     dj = pd.concat(rows, ignore_index=True)",
+   "scripts/confirm_run.py:501:     if dj[\"family\"].nunique() != sum(r[\"family\"].nunique() for r in rows):",
+   "scripts/confirm_run.py:502:         raise RuntimeError(\"a family occurs in more than one part\")",
+   "scripts/confirm_run.py:503:     est, info = AN.analyse(dj, s[\"models\"], [], None, int(s[\"replicates\"]), L.rng_new(), fe=False, sensitivities=False)"
+  ],
+  "observers_per_set": {
+   "eight_W": 21606,
+   "eight_W2": 12071,
+   "new_W": 20631,
+   "replication_W": 17082
+  },
+  "observers_with_rows_in_more_than_one_family": {
+   "eight_W": 6888,
+   "eight_W2": 3252,
+   "new_W": 3550,
+   "replication_W": 4454
+  },
+  "observers_in_both_eight_W_and_eight_W2": 4407,
+  "observers_in_both_eight_W_and_new_W": 5067
+ },
+ "A11_b3_covariates": {
+  "eight_W": [
+   "week",
+   "width",
+   "height",
+   "n_photos",
+   "vision",
+   "ident_avail",
+   "queue_load",
+   "activity S1",
+   "activity S2",
+   "activity S3"
+  ],
+  "eight_W2": [
+   "week",
+   "width",
+   "height",
+   "n_photos",
+   "vision",
+   "ident_avail",
+   "queue_load",
+   "activity S1",
+   "activity S2",
+   "activity S3"
+  ]
+ },
+ "A12": {
+  "file": "outputs/retained/tol200m_97e2340/provenance.parquet",
+  "sha256_equal_to_D17": true,
+  "rows": 233055986,
+  "row_groups": 78,
+  "fields": [
+   {
+    "name": "uuid",
+    "type": "string"
+   },
+   {
+    "name": "source_id",
+    "type": "string"
+   },
+   {
+    "name": "data_source",
+    "type": "string"
+   },
+   {
+    "name": "source_url",
+    "type": "string"
+   },
+   {
+    "name": "license_name",
+    "type": "string"
+   },
+   {
+    "name": "copyright_owner",
+    "type": "string"
+   },
+   {
+    "name": "license_link",
+    "type": "string"
+   },
+   {
+    "name": "title",
+    "type": "string"
+   },
+   {
+    "name": "bibliographicCitation",
+    "type": "string"
+   }
+  ],
+  "key_value_metadata_keys": [
+   "org.apache.spark.version",
+   "org.apache.spark.sql.parquet.row.metadata"
+  ],
+  "date_or_time_typed_fields": [],
+  "first_row_group_rows": 2913938,
+  "first_row_group_date_pattern_scan": {
+   "uuid": {
+    "non_null": 2913938,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "source_id": {
+    "non_null": 2913938,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "data_source": {
+    "non_null": 2913938,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "source_url": {
+    "non_null": 2842961,
+    "values_with_a_YYYY-MM-DD_string": 589
+   },
+   "license_name": {
+    "non_null": 2819728,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "copyright_owner": {
+    "non_null": 2913938,
+    "values_with_a_YYYY-MM-DD_string": 2044
+   },
+   "license_link": {
+    "non_null": 2687501,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "title": {
+    "non_null": 2913938,
+    "values_with_a_YYYY-MM-DD_string": 0
+   },
+   "bibliographicCitation": {
+    "non_null": 72671,
+    "values_with_a_YYYY-MM-DD_string": 9
+   }
+  },
+  "first_row_group_sources": {
+   "gbif": 2770642,
+   "eol": 71768,
+   "bioscan": 70977,
+   "fathomnet": 551
+  }
+ }
+}
